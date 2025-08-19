@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="assets/style.css">
-    
+
 </head>
+
 <body>
     <nav>
         <p class="logo">&lt;/&gt;</p>
@@ -14,33 +16,44 @@
             <li>Home</li>
             <li>Contact</li>
             <li>About</li>
-            <li class="login-nav">Register</li>
+            <li class="register-nav"><a href="#">Register</a></li>
         </ul>
+
     </nav>
     <main>
         <form action="" method="post" target="_self">
             <h1>Login</h1>
             <input type="email" class="email" placeholder="Email">
             <input type="password" class="password" placeholder="Password">
+
             <div class="user-password">
-                <div>
+                <div class="rememberme">
                     <input type="checkbox" id="forgot-password">
-                    <label style="display: inline-block; font-weight: bold; cursor: pointer;" for="forgot-password">Remember me</label>
+                    <label style="display: inline-block; font-weight: bold; cursor: pointer;"
+                        for="forgot-password">Remember me</label>
                 </div>
                 <p><a href="#">Forgot password?</a></p>
             </div>
+
             <button>Login</button>
+
             <div class="opt-log">
                 <p>Or log in with</p>
-        
                 <div class="socials-logos">
                     <img src="assets/img/facebook.png" alt="Log with Facebook" width="15%" class="social">
                     <img src="assets/img/google.png" alt="Log with Facebook" width="15%" class="social">
                     <img src="assets/img/github.png" alt="Log with Facebook" width="15%" class="social">
                 </div>
             </div>
+
             <p class="register">Don't have an account? <a href="#">Register</a></p>
+
         </form>
     </main>
+
+    <section class="copy">
+        <p><a href="https://linkedin.com/in/clebtech" target="_blank">&copy; Developed by Clebson Santos</a></p>
+    </section>
 </body>
+
 </html>
