@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Register Page</title>
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/register.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 
@@ -18,37 +19,45 @@
             <li>Home</li>
             <li>Contact</li>
             <li>About</li>
-            <li class="register-nav"><a href="register.html">Register</a></li>
+            <li class="register-nav"><a href="index.html">Login</a></li>
         </ul>
 
     </nav>
     <main>
         <form action="" method="post" target="_self">
-            <h1>Login</h1>
+
+            <h1>Sign up</h1>
+
+            <div class="input-name">
+                <input type="text" class="user-name" placeholder="Name" required>
+                <i class='bxr  bx-user'></i>
+            </div>
 
             <div class="input-email">
                 <input type="email" class="email" placeholder="Email" required>
                 <i class='bxr  bx-envelope-alt'  ></i> 
             </div>
-            
+
             <div class="input-password">
-                <input type="password" class="password" placeholder="Password" required>
+                <input type="password" class="password" placeholder="Create a password" id="password" required>
                 <i class='bx  bx-eye' style="cursor: pointer;" title="Show password"> </i>
             </div>
 
-            <div class="user-password">
-                <div class="rememberme">
-                    <input type="checkbox" id="forgot-password">
-                    <label style="display: inline-block; font-weight: bold; cursor: pointer;"
-                        for="forgot-password">Remember me</label>
-                </div>
-                <p><a href="#">Forgot password?</a></p>
+            <div class="input-password">
+                <input type="password" class="password" placeholder="Confirm password" id="repassword" required>
+                <i class='bx  bx-eye' style="cursor: pointer;" title="Show password"> </i>
             </div>
 
-            <button>Login</button>
+            <div class="terms">
+                <input type="checkbox" id="accept-terms">
+                <label style="display: inline-block; font-weight: bold; cursor: pointer;" for="accept-terms">I accept
+                    all terms & conditions</label>
+            </div>
+
+            <button>Sign up</button>
 
             <div class="opt-log">
-                <p>Or log in with</p>
+                <p>Or sign up with</p>
                 <div class="socials-logos">
                     <img src="assets/img/facebook.png" alt="Log with Facebook" width="15%" class="social" title="Facebook">
                     <img src="assets/img/google.png" alt="Log with Facebook" width="15%" class="social" title="Google">
@@ -56,8 +65,7 @@
                 </div>
             </div>
 
-            <p class="register">Don't have an account? <a href="register.html"><span
-                        style="font-weight: bold;">Register here</span></a></p>
+            <p class="register">Already have an account? <a href="index.html"><span style="font-weight: bold;">Sign in here</span></a></p>
 
         </form>
     </main>

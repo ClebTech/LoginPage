@@ -21,7 +21,6 @@ nav {
     background: transparent;
     backdrop-filter: blur(5px);
     top: 0;
-    margin-bottom: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,7 +74,7 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +89,6 @@ h1 {
 
 form {
     width: 500px;
-    height: 650px;
     border: 1px solid white;
     background: transparent;
     backdrop-filter: blur(5px);
@@ -103,20 +101,8 @@ form {
     gap: 3%;
 }
 
-.user-password p {
-    font-weight: bold;
-}
-
-form .user-password {
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-    margin-bottom: 8%;
-    font-size: 17px;
-}
-
-form .email,
-.password {
+form .input-email,
+.input-password, .input-name {
     width: 75%;
     height: 50px;
     border: 1px solid rgb(255, 255, 255);
@@ -125,6 +111,17 @@ form .email,
     font-size: 25px;
     padding: 0 15px;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.password, .email, .user-name{
+    height: 100%;
+    width: 90%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
 }
 
 form button {
@@ -183,7 +180,6 @@ form a:hover {
 
 .register {
     margin-top: 5%;
-    font-weight: bold;
 }
 
 .register-nav a{
@@ -198,10 +194,6 @@ form a:hover {
     gap: 5px;
 }
 
-.copy{
-    margin-top: 2%;
-}
-
 .copy a{
     text-decoration: none;
     color: white;
@@ -211,8 +203,7 @@ form a:hover {
     text-decoration: underline;
 }
 
-
-@media(max-width: 520px), (max-height: 860px) {
+@media(max-width: 520px), (max-height: 890px) {
 
     h1 {
         font-size: 30px;
@@ -222,46 +213,24 @@ form a:hover {
         font-size: 18px;
     }
 
-    form {
-        width: 300px;
-        height: 400px;
-    }
 
     .register {
         font-size: 10px;
         margin-top: 2px;
     }
 
-    form .user-password {
-        width: 65%;
-    }
 
-    .rememberme{
-        gap: 1.5px;
-    }
-
-    form .email,
-    .password,
+    form .input-email,
+    .input-password, .input-name,
     button {
         width: 70%;
         height: 35px;
         font-size: 15px;
     }
 
-    .user-password .rememberme {
-        display: flex;
-        align-items: center;
+    form .password, .email, .user-name{
+        font-size: 15px;
     }
-
-    .user-password p,
-    label {
-        font-size: 0.6rem;
-    }
-
-    .user-password input {
-        width: 12px;
-    }
-
 
     form button {
         width: 70%;

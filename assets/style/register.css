@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+form .name {
+    width: 75%;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 0 15px;
+    color: white;
+}
+
+.terms {
+    margin-bottom: 5%;
+    margin-right: 20%;
+}
+
+form {
+    height: 750px;
+}
+
+nav {
+    margin-bottom: 60px;
+}
+
+.copy {
+    margin-top: 1%;
+    font-size: 10px;
+}
+
+
+@media(max-width: 520px), (max-height: 890px) {
+    form .name {
+        width: 70%;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    form {
+        width: 350px;
+        height: 500px;
+    }
+
+    .terms label{
+        font-size: 10px;
+    }
+
+    .terms #accept-terms{
+        width: 10px;
+    }
+
+    .terms{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        height: auto;
+    }
+
+}

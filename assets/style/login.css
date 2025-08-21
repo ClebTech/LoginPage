@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+form {
+    height: 650px;
+}
+
+nav {
+    margin-bottom: 120px;
+}
+
+.copy {
+    margin-top: 2%;
+}
+
+.user-password p {
+    font-weight: bold;
+}
+
+form .user-password {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-bottom: 8%;
+    font-size: 17px;
+}
+
+@media(max-width: 520px), (max-height: 890px) {
+    .rememberme {
+        gap: 1.5px;
+    }
+
+    .user-password .rememberme {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-password p,
+    label {
+        font-size: 0.6rem;
+    }
+
+    form .user-password {
+        width: 65%;
+    }
+
+    .user-password input {
+        width: 12px;
+    }
+
+    form {
+        width: 300px;
+        height: 400px;
+    }
+
+    
+}
