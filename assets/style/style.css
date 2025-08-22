@@ -103,7 +103,7 @@ form {
 
 form .input-email,
 .input-password, .input-name {
-    width: 75%;
+    width: 80%;
     height: 50px;
     border: 1px solid rgb(255, 255, 255);
     background: transparent;
